@@ -33,3 +33,13 @@
 
 - The system should be scalable to handle a growing number of subscribers without compromising performance.
 - Ensure that the implementation follows object-oriented design principles and promotes loose coupling between the news agency and subscribers.
+
+## UML
+<img width="1781" height="1040" alt="observerPattern UML" src="https://github.com/user-attachments/assets/fbe4c28c-6e8e-4653-98eb-6b1741fcb6fe" />
+
+## Components
+- **NewsAgencySubject (Subject Interface)** : Defines how subscribers are managed.
+- **NewsAgency (Concrete Subject)** : Stores news and subscriber list. Updates news and notifies subscribers
+- **SubscriberObserver (Subject Interface)** : Defines how subscribers receive updates.
+- **Subscriber (Concrete Observer)** : Stores subscriber info.
+- **Publisher (Main)** : Registers/unregisters subscribers. Publishes breaking news.
